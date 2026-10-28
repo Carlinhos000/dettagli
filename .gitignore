@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*token*
+*secret*
+*password*
+node_modules/
+.openai/
+dettagli-arquitetura.html

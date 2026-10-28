@@ -1,0 +1,10 @@
+{
+  "name": "dettagli-arquitetura",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/preview.mjs",
+    "build": "node scripts/build-standalone.mjs"
+  }
+}
