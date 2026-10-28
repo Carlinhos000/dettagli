@@ -106,6 +106,20 @@ html{overflow-x:clip}
 @media(max-width:360px){.hero .hero-copy h1{font-size:25px}.hero-consult>span{padding-inline:12px;font-size:9px}.hero .hero-bottom{left:16px;right:16px}.hero-controls button{width:44px}.hero-hotspot{font-size:7px}}
 @media(prefers-reduced-motion:reduce){html:not(.motion-enabled) .hero-primary,html:not(.motion-enabled) .hero-alternate{transition:none}}
 
+/* Portrait hero: keep the architecture photograph continuous behind the full opening. */
+@media(max-width:640px){
+ .hero-scene{top:0;right:0;bottom:0;left:0;width:100%;height:100%;aspect-ratio:auto;transform:none;transform-origin:center}
+ .hero-scene img{object-fit:cover;object-position:50% 50%}
+ .hero .hero-foreground{clip-path:polygon(0 36.3%,50.1% 23.5%,100% 36.3%,100% 100%,0 100%)}
+ .hero .hero-wordmark{top:13%;left:0;right:0;font-size:20.5cqw;line-height:1;letter-spacing:-.07em}
+ .hero-hotspots{inset:0;height:100%;top:0;bottom:0}
+ .hotspot-design{left:4%;top:61%}.hotspot-light{left:49%;top:31%}.hotspot-material{left:58%;top:55%}
+ .hero .hero-shade{background:linear-gradient(180deg,#141e2459 0%,#141e241a 21%,transparent 39%,#111b244d 58%,#111b24e8 100%)}
+ .hero .hero-bottom{bottom:calc(74px + env(safe-area-inset-bottom,0px))}
+ .hero .hero-copy h1{font-size:clamp(26px,7.2vw,30px);max-width:290px}
+ .hero-copy p{max-width:270px}
+}
+
 /* DETTAGLI identity: geometric monogram, editorial wordmark and full descriptor. */
 .dettagli-logo{display:flex;align-items:center;flex-direction:column;justify-content:center;gap:2px;line-height:1;white-space:nowrap}
 .dettagli-symbol{display:block;width:auto;height:25px;max-width:none;color:currentColor;object-fit:contain}
